@@ -74,6 +74,8 @@ body:
     attributes:
       label: Minecraft Version
       placeholder: 26.1.2
+    validations:
+      required: true
 
   - type: textarea
     id: context

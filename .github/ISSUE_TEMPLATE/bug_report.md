@@ -1,112 +1,94 @@
+---
 name: Bug Report
-description: Report a bug in CoreTuff
-title: "[Bug]: "
-labels: ["bug"]
-body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report for CoreTuff!
-        Please fill out the form to the best of your ability to help us fix the issue.
+about: Report a bug in CoreTuff
+title: "[Bug] "
+labels: bug
+assignees: ''
 
-  - type: input
-    id: title
-    attributes:
-      label: Add a title
-      placeholder: Short description of the issue
-    validations:
-      required: true
+---
 
-  - type: textarea
-    id: bug-description
-    attributes:
-      label: Describe the bug
-      description: A clear and concise description of what the bug is.
-      placeholder: Explain the issue here...
-    validations:
-      required: true
+## Describe the bug
+A clear and concise description of what the bug is.
 
-  - type: textarea
-    id: reproduce
-    attributes:
-      label: To Reproduce
-      description: Steps to reproduce this behaviour
-      placeholder: |
-        1. Go to '...'
-        2. Click on '...'
-        3. Scroll down to '...'
-        4. See error
-    validations:
-      required: true
+---
 
-  - type: textarea
-    id: expected
-    attributes:
-      label: Expected behaviour
-      description: A clear and concise description of what you expected to happen.
-      placeholder: What should happen instead?
-    validations:
-      required: true
+## To Reproduce
+Steps to reproduce the behaviour:
 
-  - type: textarea
-    id: screenshots
-    attributes:
-      label: Screenshots / Videos
-      description: If applicable, add screenshots or videos to help explain your problem.
-      placeholder: Drag and drop screenshots/videos here...
+1. Go to '...'
+2. Click on '...'
+3. Scroll down to '...'
+4. See error
 
-  - type: textarea
-    id: server-info
-    attributes:
-      label: Server Version and Plugins
-      description: |
-        Please provide:
-        - Server software and version
-        - Java version
-        - Installed plugins/addons
-      placeholder: |
-        Server: Paper 1.21.1
-        Java: 21
-        Plugins:
-        - CoreTuff
-        - PlaceholderAPI
-        - LuckPerms
+---
 
-  - type: dropdown
-    id: component
-    attributes:
-      label: Core / Addon
-      description: Which component has the issue?
-      options:
-        - Core
-        - Addon
-    validations:
-      required: true
+## Expected behaviour
+A clear and concise description of what you expected to happen.
 
-  - type: input
-    id: addon-name
-    attributes:
-      label: Addon Name
-      description: Fill this only if the issue is related to an addon
-      placeholder: ExampleAddon
+---
 
-  - type: input
-    id: coretuff-version
-    attributes:
-      label: CoreTuff Version
-      placeholder: "For example: 1.0.0"
-    validations:
-      required: true
+## Screenshots / Videos
+If applicable, add screenshots or videos to help explain your problem.
 
-  - type: input
-    id: minecraft-version
-    attributes:
-      label: Minecraft Version
-      placeholder: "For example: 1.21.1"
+---
 
-  - type: textarea
-    id: additional-context
-    attributes:
-      label: Additional Context
-      description: Add any other context about the problem here.
-      placeholder: Extra information...
+## Server Version and Plugins
+
+Please provide:
+
+- Server software and version
+- Java version
+- Installed plugins/addons
+
+Example:
+
+```txt
+Server: Paper 1.21.1
+Java: 21
+
+Plugins:
+- CoreTuff
+- PlaceholderAPI
+- LuckPerms
+```
+
+---
+
+## Core / Addon
+
+Which component has the issue?
+
+- Core
+- Addon
+
+If addon, provide addon name:
+
+```txt
+Addon Name:
+```
+
+---
+
+## CoreTuff Version
+
+Example:
+
+```txt
+1.0.0
+```
+
+---
+
+## Minecraft Version
+
+Example:
+
+```txt
+1.21.1
+```
+
+---
+
+## Additional Context
+
+Add any other context about the problem here.

@@ -45,17 +45,6 @@ body:
       label: Screenshots / Videos
       description: Add screenshots or videos if applicable.
 
-  - type: textarea
-    id: server
-    attributes:
-      label: Server Version and Plugins
-      placeholder: |
-        Server: Paper 1.21.1
-        Java: 21
-        Plugins:
-        - CoreTuff
-        - PlaceholderAPI
-
   - type: dropdown
     id: component
     attributes:

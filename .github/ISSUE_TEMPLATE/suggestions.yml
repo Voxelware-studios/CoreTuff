@@ -1,0 +1,104 @@
+name: Suggestions & Feature Requests
+description: Suggest features, improvements, or ideas for CoreTuff
+title: "[Suggestion]: "
+labels:
+  - enhancement
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # CoreTuff Suggestions
+        
+        Thanks for helping improve CoreTuff!
+        
+        You can use this page for:
+        - Feature requests
+        - Improvements
+        - Addon ideas
+        - UI suggestions
+        - Optimization ideas
+        - General feedback
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Suggestion Type
+      description: What kind of suggestion is this?
+      options:
+        - New Feature
+        - Improvement
+        - Optimization
+        - Addon Idea
+        - UI/UX Suggestion
+        - API Suggestion
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Core / Addon
+      options:
+        - Core
+        - Addon
+    validations:
+      required: true
+
+  - type: input
+    id: addon
+    attributes:
+      label: Addon Name
+      description: Fill this only if this suggestion is related to an addon.
+      placeholder: ExampleAddon
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe your suggestion
+      description: Explain your idea clearly and in detail.
+      placeholder: |
+        Example:
+        Add a modular chat formatting system with PlaceholderAPI support.
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Why is this needed?
+      description: What problem does this solve?
+      placeholder: |
+        Explain why this feature or improvement would be useful.
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Suggested Solution
+      description: How should this work?
+      placeholder: |
+        Describe how you imagine this feature functioning.
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this for you?
+      options:
+        - Low
+        - Medium
+        - High
+        - Critical
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples / References
+      description: Reference plugins, screenshots, mockups, or examples if applicable.
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Add anything else related to this suggestion here.

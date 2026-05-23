@@ -43,6 +43,7 @@ body:
       options:
         - Core
         - Addon
+        - Others
     validations:
       required: true
 
@@ -79,17 +80,6 @@ body:
       description: How should this work?
       placeholder: |
         Describe how you imagine this feature functioning.
-
-  - type: dropdown
-    id: priority
-    attributes:
-      label: Priority
-      description: How important is this for you?
-      options:
-        - Low
-        - Medium
-        - High
-        - Critical
 
   - type: textarea
     id: examples

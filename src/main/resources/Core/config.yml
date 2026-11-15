@@ -1,0 +1,6 @@
+config-version: 1.0 #DO NOT TOUCH IT
+
+prefix: "&f&l[&b&lCoreTuff&f&l]:&r "
+postfix: ""
+nopermission: "&c You dont have permission to use this command!"
+

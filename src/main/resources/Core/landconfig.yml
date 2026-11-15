@@ -1,0 +1,93 @@
+config-version: 1.0 #DO NOT TOUCH IT
+
+homes:
+  teleport-delay-seconds: 3
+  default-home: "home"
+  max-homes-permission-base: "coretuff.land.sethome."
+  max-homes-default: 1
+
+  messages:
+    set: "&aHome &f{name} &ahas been set."
+    deleted: "&cHome &f{name} &cdeleted."
+    teleported: "&aTeleported to home &f{name}&a."
+    does-not-exist: "&cHome &f{name} &cdoes not exist."
+    no-homes: "&cYou have no homes set."
+    list-header: "&aYour homes:"
+    list-entry: "&8- &f{name}"
+    limit: "&cYou can only set up to {max} homes."
+    invalid-name: "&cHome name must be 1-32 alphanumeric characters."
+    others-list-header: "&a{player}'s homes:"
+
+  sounds:
+    set:
+      enabled: true
+      sound: "BLOCK_AMETHYST_BLOCK_CHIME"
+      volume: 0.7
+      pitch: 1.2
+    teleport:
+      enabled: true
+      sound: "ENTITY_ENDERMAN_TELEPORT"
+      volume: 0.7
+      pitch: 1.25
+    delete:
+      enabled: true
+      sound: "BLOCK_ANVIL_LAND"
+      volume: 0.5
+      pitch: 1.5
+    list:
+      enabled: true
+      sound: "BLOCK_NOTE_BLOCK_CHIME"
+      volume: 0.5
+      pitch: 1.0
+
+warps:
+  teleport-delay-seconds: 3
+  economy-cost: 0.0
+  economy-cost-permission-bypass: "coretuff.land.warps.bypass-cost"
+  max-warps-permission-base: "coretuff.land.warps.setwarp."
+
+  messages:
+    set: "&aWarp &f{name} &ahas been created."
+    deleted: "&cWarp &f{name} &cdeleted."
+    teleported: "&aTeleported to warp &f{name}&a."
+    does-not-exist: "&cWarp &f{name} &cdoes not exist."
+    no-warps: "&cNo warps exist on this server."
+    list-header: "&6Warps:"
+    list-entry: "&8- &f{name}"
+    invalid-name: "&cWarp name must be 1-32 alphanumeric characters."
+    cost: "&aTeleporting to &f{name} &acosts {cost}."
+    insufficient-funds: "&cYou need {cost} to use this warp."
+    limit: "&cYou can only set up to {max} warps."
+    others-teleported: "&aTeleported {player} to warp &f{name}&a."
+
+  sounds:
+    set:
+      enabled: true
+      sound: "BLOCK_END_PORTAL_FRAME_FILL"
+      volume: 0.7
+      pitch: 1.0
+    teleport:
+      enabled: true
+      sound: "ENTITY_ENDERMAN_TELEPORT"
+      volume: 0.7
+      pitch: 1.25
+    delete:
+      enabled: true
+      sound: "ENTITY_ITEM_BREAK"
+      volume: 0.5
+      pitch: 1.2
+    list:
+      enabled: true
+      sound: "BLOCK_NOTE_BLOCK_CHIME"
+      volume: 0.5
+      pitch: 1.0
+    no-permission:
+      enabled: true
+      sound: "BLOCK_NOTE_BLOCK_BASS"
+      volume: 0.5
+      pitch: 0.5
+    insufficient-funds:
+      enabled: true
+      sound: "BLOCK_NOTE_BLOCK_BASS"
+      volume: 0.6
+      pitch: 0.3

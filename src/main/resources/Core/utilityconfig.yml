@@ -1,0 +1,52 @@
+config-version: 1.0 #DO NOT TOUCH IT
+
+playerOffline: "&cPlayer is offline."
+cmdUse1: "&c USage: /{command} <player>"
+
+Gamemode_Shorthand:
+  creative: "Your gamemode has been set to Creative!"
+  survival: "Your gamemode has been set to Survival!"
+  spectator: "Your gamemode has been set to Spectator!"
+  adventure: "Your gamemode has been set to Adventure!"
+  gamemodeSet: "Changed gamemode of {player} to {gamemode}"
+  gamemodeChange: "Your gamemode changed to {gamemode} by {player}"
+
+Fly:
+  cooldown: "&cWait {time} minuets before using this again."
+  infly: "You are alreadly in fly mode"
+  flyenable: "Fly enabled for {time} minuets."
+  flyexpire: "Fly expired."
+  flyduration: 2
+  flycooldown: 5
+
+Heal:
+  healed: "You have been healed"
+  healedOther: "You have healed {player}"
+  healedTarget: "You have been healed by {player}"
+
+Feed:
+  filled: "Your have been fed"
+  feedOther: "You have fed {player}"
+  feedTarget: "You have been fed by {player}"
+
+Sounds:
+  fly-enable:
+    enabled: true
+    sound: "ENTITY_PHANTOM_FLAP"
+    volume: 0.8
+    pitch: 1.15
+  fly-expire:
+    enabled: true
+    sound: "BLOCK_BEACON_DEACTIVATE"
+    volume: 0.8
+    pitch: 1.0
+  heal:
+    enabled: true
+    sound: "ENTITY_PLAYER_LEVELUP"
+    volume: 0.7
+    pitch: 1.4
+  feed:
+    enabled: true
+    sound: "ENTITY_GENERIC_EAT"
+    volume: 0.7
+    pitch: 1.1

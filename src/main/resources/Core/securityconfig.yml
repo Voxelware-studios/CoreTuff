@@ -1,0 +1,6 @@
+config-version: 1.0 #DO NOT TOUCH IT
+
+plugin-hide: false
+
+messages:
+  hidden-command: "&cUnknown command."

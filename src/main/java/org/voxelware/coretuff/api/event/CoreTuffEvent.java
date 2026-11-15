@@ -1,0 +1,10 @@
+package org.voxelware.coretuff.api.event;
+
+public abstract class CoreTuffEvent {
+
+    private boolean cancelled;
+
+    public boolean isCancelled() { return cancelled; }
+
+    public void setCancelled(boolean cancelled) { this.cancelled = cancelled; }
+}

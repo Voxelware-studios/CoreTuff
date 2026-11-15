@@ -1,0 +1,95 @@
+config-version: 1.0 #DO NOT TOUCH IT
+
+Teleportation:
+  tpSelf: "&cYou cannot teleport to yourself."
+  tpsenderMessage: "teleportation request sent to {player}"
+
+  tpasktargetMessage:
+    - "{player} wants to teleport to you."
+    - "You have {time} seconds to accept this request."
+    - "You can either accept this request with /tpaccept or decline with /tpdeny."
+
+  tpheretargetMessage:
+    - "{player} wants you to teleport to them."
+    - "You have {time} seconds to accept this request."
+    - "You can either accept this request with /tpaccept or decline with /tpdeny."
+
+  tpCooldown: 200
+  tpExpire: 120
+  tpNoPendingReq: "&cNo pending request."
+  tpReqExpired: "&cRequest expired."
+  tpNoReqDeny: "&cNo request to deny."
+  tpReqDenied: "&cYour teleport request was denied."
+  tpDenied: "&eDenied teleport request."
+
+  rtpCooldown: 80
+  rtpOnCooldown: "&cOn cooldown!"
+  rtpLocSearch: "&7Searching for location..."
+  rtpNoSafeLoc: "&cNo Safe location found."
+  rtpTeleported: "&aTeleported!"
+  rtpTeleportFailed: "&cTeleport failed."
+
+  backCooldown: 50
+  backNoPrevLocation: "&cNo previous location."
+  backOnCooldown: "&cYou must wait {time} seconds to use /back again"
+
+  playerIgnore: "&cThis player is ignoring you."
+  ignoreYourself: "&cYou cannot ignore yourself."
+  alreadlyIgnoring: "&cAlready ignoring this player."
+  ignoreAdd: "&aYou are now ignoring {player}"
+  notIgnoring: "&cYou are not ignoring this player."
+  ignoreRevoke: "&aYou stopped ignoring {player}"
+
+  tpCountMove: "&aTeleporting in {time} seconds. Don't move!"
+  tpCountdown: "&7Teleporting in {time}..."
+  tpCancMoved: "&cTeleport cancelled (you moved)"
+  tpCancDamage: "&cTeleport cancelled (damage taken)"
+
+  rtpGeneratedChunksOnly: true
+
+Sounds:
+  request-send:
+    enabled: true
+    sound: "BLOCK_NOTE_BLOCK_PLING"
+    volume: 0.8
+    pitch: 1.2
+  request-receive:
+    enabled: true
+    sound: "BLOCK_AMETHYST_BLOCK_CHIME"
+    volume: 0.8
+    pitch: 1.1
+  request-accept:
+    enabled: true
+    sound: "ENTITY_ENDERMAN_TELEPORT"
+    volume: 0.7
+    pitch: 1.25
+  request-denied:
+    enabled: true
+    sound: "BLOCK_ANVIL_LAND"
+    volume: 0.5
+    pitch: 1.5
+  rtp-search:
+    enabled: true
+    sound: "BLOCK_RESPAWN_ANCHOR_CHARGE"
+    volume: 0.5
+    pitch: 1.3
+  rtp-success:
+    enabled: true
+    sound: "ENTITY_ENDERMAN_TELEPORT"
+    volume: 0.8
+    pitch: 1.0
+  rtp-countdown:
+    enabled: true
+    sound: "BLOCK_NOTE_BLOCK_HAT"
+    volume: 0.45
+    pitch: 1.4
+  rtp-fail:
+    enabled: true
+    sound: "BLOCK_NOTE_BLOCK_BASS"
+    volume: 0.8
+    pitch: 0.7
+  back-fail:
+    enabled: true
+    sound: "BLOCK_NOTE_BLOCK_BASS"
+    volume: 0.8
+    pitch: 0.7

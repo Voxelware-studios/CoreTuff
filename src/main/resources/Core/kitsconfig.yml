@@ -1,0 +1,20 @@
+config-version: 1.0 #DO NOT TOUCH IT
+
+kit-teleport-delay-seconds: 0
+
+default-cooldown-seconds: 0
+
+kits:
+  starter:
+    display-name: "&aStarter Kit"
+    permission: "coretuff.utility.kit.starter"
+    cooldown-seconds: 86400
+    items:
+      - material: "DIAMOND_SWORD"
+        amount: 1
+      - material: "COOKED_BEEF"
+        amount: 16
+      - material: "IRON_PICKAXE"
+        amount: 1
+      - material: "IRON_AXE"
+        amount: 1

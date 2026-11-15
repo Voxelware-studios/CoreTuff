@@ -1,0 +1,160 @@
+config-version: 1.1 #DO NOT TOUCH IT
+
+moderation:
+  messages:
+    no-permission: "&cYou do not have permission to use this moderation command."
+    player-not-found: "&cPlayer not found."
+    player-not-found-or-no-ip: "&cPlayer not found or no IP."
+    cannot-punish-self: "&cYou cannot punish yourself."
+    cannot-punish-op: "&cYou cannot punish an operator."
+
+  commands:
+    ban:
+      usage: "&cUsage: /ban <player> <reason>"
+      success: "&aBanned {player}"
+
+    tempban:
+      usage: "&cUsage: /tempban <player> <time> <reason>"
+      success: "&aTemp banned {player}"
+      invalid-duration: "&c{message}"
+
+    ban-ip:
+      usage: "&cUsage: /ban-ip <player> <reason>"
+      success: "&aIP banned {player}"
+
+    kick:
+      usage: "&cUsage: /kick <player> <reason>"
+      success: "&aKicked {player}"
+      kick-message: "&cKicked: {reason}"
+
+    pardon:
+      usage: "&cUsage: /pardon <player> [reason]"
+      default-reason: "Pardoned"
+      success: "&aPardoned {player}"
+
+    warn:
+      usage: "&cUsage: /warn <player> <low|medium|high> <reason>"
+      invalid-severity: "&cInvalid severity. Use: low, medium, high"
+      sender-success: "&aWarn added. Total points: {points}"
+      target-message:
+        - "&cYou have been warned."
+        - "&7Reason: &f{reason}"
+        - "&7Severity: &f{severity}"
+        - "&7Total points: &f{points}"
+
+    pid:
+      usage: "&cUsage: /pid [page] or /pid <view|pardon> <id>"
+      pardon-usage: "&cUsage: /pid pardon <id> <reason>"
+      invalid-page: "&cInvalid page number."
+      no-punishment-found: "&cNo punishment found."
+      unknown-subcommand: "&cUnknown subcommand."
+      recent-title: "&6Recent Punishments: &7(Page {page})"
+      recent-entry: "&e#{id} &7- &f{player} &7- &6{type} &7- {status}"
+      pardon-success: "&aPunishment {id} pardoned."
+      status-active: "&aACTIVE"
+      status-pardoned: "&cPARDONED"
+      view:
+        title: "&6Punishment #{id}"
+        type: "&eType: &f{type}"
+        player: "&ePlayer: &f{player}"
+        moderator: "&eModerator: &f{moderator}"
+        reason: "&eReason: &f{reason}"
+        ip: "&eIP: &f{ip}"
+        status: "&eStatus: &f{status}"
+        remaining: "&eRemaining: &f{remaining}"
+        duration: "&eDuration: &f{duration}"
+        pardon-reason: "&ePardon Reason: &f{pardonReason}"
+        pardoned-by: "&ePardoned By: &f{pardonedBy}"
+
+  warn-points:
+    low: 1
+    medium: 2
+    high: 3
+
+  warn-decay:
+    amount: 3
+    interval: "1mo"
+
+  auto-punishments:
+    tempban-points: 3
+    tempban-duration: "1d"
+    tempban-reason: "Too many warnings"
+    ban-points: 6
+    ban-reason: "Too many warnings"
+
+  punishment-history:
+    enabled: true
+    retention-days: 90
+
+  ban-screen:
+    disconnect: "You are banned."
+    reason-label: "Reason"
+    moderator-label: "Moderator"
+    ban-id-label: "Ban ID"
+    expires-label: "Expires"
+    remaining-label: "Remaining"
+    duration-label: "Duration"
+    permanent-text: "Permanent"
+    appeal-label: "Appeal"
+    appeal-text: "Contact server staff"
+
+  bedrock-ban-screen:
+    disconnect: "You are banned."
+    reason-label: "Reason"
+    id-label: "ID"
+
+  sounds:
+    warn:
+      enabled: true
+      sound: "BLOCK_NOTE_BLOCK_CHIME"
+      volume: 0.8
+      pitch: 1.15
+    ban:
+      enabled: true
+      sound: "ENTITY_WITHER_DEATH"
+      volume: 0.7
+      pitch: 1.4
+    tempban:
+      enabled: true
+      sound: "ENTITY_LIGHTNING_BOLT_THUNDER"
+      volume: 0.6
+      pitch: 1.5
+
+  jail:
+    teleport-delay-seconds: 3
+    release-on-logout: true
+    messages:
+      jailed: "&cYou have been jailed in &f{jail}&c."
+      released: "&aYou have been released from jail."
+      already-jailed: "&c{player} is already jailed."
+      not-jailed: "&c{player} is not jailed."
+      no-jail-exists: "&cJail &f{jail} &cdoes not exist."
+      jail-set: "&aJail &f{jail} &aset."
+      jail-deleted: "&cJail &f{jail} &cdeleted."
+      jail-list-header: "&6Jails:"
+      jail-list-entry: "&8- &f{name}"
+      jails-none: "&cNo jails exist."
+      usage-jail: "&cUsage: /jail <name> [player]"
+      usage-setjail: "&cUsage: /setjail <name>"
+      usage-deljail: "&cUsage: /deljail <name>"
+    sounds:
+      jail:
+        enabled: true
+        sound: "BLOCK_IRON_DOOR_CLOSE"
+        volume: 0.8
+        pitch: 1.0
+      unjail:
+        enabled: true
+        sound: "BLOCK_IRON_DOOR_OPEN"
+        volume: 0.8
+        pitch: 1.0
+      set:
+        enabled: true
+        sound: "ENTITY_PLAYER_LEVELUP"
+        volume: 0.7
+        pitch: 1.2
+      delete:
+        enabled: true
+        sound: "ENTITY_ITEM_BREAK"
+        volume: 0.6
+        pitch: 0.8

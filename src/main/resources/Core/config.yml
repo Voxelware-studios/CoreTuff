@@ -1,0 +1,15 @@
+config-version: 1.0 #DO NOT TOUCH IT
+
+prefix: "&f&l[&b&lCoreTuff&f&l]:&r "
+postfix: ""
+nopermission: "&c You dont have permission to use this command!"
+
+# Anonymous usage statistics reported to the CoreTuff web panel.
+# CoreTuff 1.1 is accepted by the panel in stats-only mode: it contributes to the
+# public statistics on the panel website and never grants editor or moderation access.
+Panel:
+  Enabled: true
+  Backend-Url: "https://ct-backend-b8cy.onrender.com"
+  Report-Interval-Seconds: 60
+  Heartbeat-Interval-Seconds: 10
+  Server-Id: "" # generated automatically on first start, keep it private

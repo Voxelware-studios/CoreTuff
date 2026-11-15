@@ -1,0 +1,65 @@
+config-version: 1.0 #DO NOT TOUCH IT
+
+currency:
+  name: "Dollar"
+  name-plural: "Dollars"
+  symbol: "$"
+  decimal-places: 2
+
+defaults:
+  starting-balance: 0.0
+  max-balance: 999999999.99
+
+transactions:
+  pay-tax-percent: 0.0
+  minimum-transfer: 0.01
+  pay-tax-bypass-permission: "coretuff.economy.bypass-tax"
+
+interest:
+  enabled: false
+  rate-percent: 0.5
+  interval-hours: 24
+  max-balance: 100000.0
+  interest-bypass-permission: "coretuff.economy.bypass-interest"
+
+sounds:
+  pay-sent:
+    enabled: true
+    sound: "ENTITY_ITEM_PICKUP"
+    volume: 0.5
+    pitch: 0.8
+  pay-received:
+    enabled: true
+    sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    volume: 0.7
+    pitch: 1.2
+  balance-check:
+    enabled: true
+    sound: "BLOCK_NOTE_BLOCK_CHIME"
+    volume: 0.5
+    pitch: 1.0
+  eco-give:
+    enabled: true
+    sound: "ENTITY_PLAYER_LEVELUP"
+    volume: 0.7
+    pitch: 1.0
+  eco-take:
+    enabled: true
+    sound: "BLOCK_ANVIL_LAND"
+    volume: 0.5
+    pitch: 1.5
+  eco-set:
+    enabled: true
+    sound: "BLOCK_ANVIL_USE"
+    volume: 0.5
+    pitch: 1.0
+  eco-reset:
+    enabled: true
+    sound: "BLOCK_NOTE_BLOCK_BASS"
+    volume: 0.6
+    pitch: 0.5
+  insufficient-funds:
+    enabled: true
+    sound: "BLOCK_NOTE_BLOCK_BASS"
+    volume: 0.6
+    pitch: 0.3

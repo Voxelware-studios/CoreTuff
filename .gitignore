@@ -5,6 +5,7 @@
 # Allow these directories
 !gradle/
 !src/
+!.github/
 
 # Allow these files
 !build.gradle.kts
@@ -16,3 +17,4 @@
 # Allow all contents inside permitted directories
 !gradle/**
 !src/**
+!.github/**

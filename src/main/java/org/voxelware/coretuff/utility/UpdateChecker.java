@@ -72,8 +72,12 @@ public class UpdateChecker {
                 if (targetVersion == null) return;
 
                 String currentVersion = plugin.getPluginMeta().getVersion();
+                double target = Double.parseDouble(targetVersion.split("-")[0]);
+                double current = Double.parseDouble(currentVersion.split("-")[0]);
 
-                if (!currentVersion.equalsIgnoreCase(targetVersion)) {
+                double difference = target - current;
+
+                if (!currentVersion.equalsIgnoreCase(targetVersion) && (difference>=0)) {
                     latestFoundVersion = targetVersion;
                     latestVersionType = targetType;
 

@@ -1,6 +1,6 @@
 package org.voxelware.coretuff.api.economy;
 
-import org.voxelware.coretuff.Features.Economy.EconomyConfig;
+import org.voxelware.coretuff.features.economy.EconomyConfig;
 
 public final class InterestApiImpl implements InterestApi {
 

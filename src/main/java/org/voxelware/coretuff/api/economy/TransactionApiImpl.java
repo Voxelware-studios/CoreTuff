@@ -1,7 +1,7 @@
 package org.voxelware.coretuff.api.economy;
 
-import org.voxelware.coretuff.Features.Economy.Transaction.TransactionRepository;
-import org.voxelware.coretuff.Features.Economy.Transaction.TransactionType;
+import org.voxelware.coretuff.features.economy.transaction.TransactionRepository;
+import org.voxelware.coretuff.features.economy.transaction.TransactionType;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

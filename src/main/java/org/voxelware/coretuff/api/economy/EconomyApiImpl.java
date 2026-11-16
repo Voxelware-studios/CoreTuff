@@ -3,16 +3,15 @@ package org.voxelware.coretuff.api.economy;
 import org.bukkit.Bukkit;
 import org.bukkit.OfflinePlayer;
 import org.voxelware.coretuff.CoreTuff;
-import org.voxelware.coretuff.Features.Economy.EconomyService;
-import org.voxelware.coretuff.Features.Economy.Transaction.TransactionRepository;
-import org.voxelware.coretuff.Features.Economy.Transaction.TransactionType;
+import org.voxelware.coretuff.features.economy.EconomyService;
+import org.voxelware.coretuff.features.economy.transaction.TransactionRepository;
+import org.voxelware.coretuff.features.economy.transaction.TransactionType;
 import org.voxelware.coretuff.api.economy.events.BalanceChangeEvent;
 import org.voxelware.coretuff.api.economy.events.EconomyDepositEvent;
 import org.voxelware.coretuff.api.economy.events.EconomyTransferEvent;
 import org.voxelware.coretuff.api.economy.events.EconomyWithdrawEvent;
 
 import java.util.List;
-import java.util.Map;
 import java.util.UUID;
 import java.util.logging.Level;
 

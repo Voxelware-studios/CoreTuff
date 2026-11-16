@@ -1,0 +1,131 @@
+name: Feature Request
+description: Suggest a feature, improvement, or new idea for CoreTuff
+title: "[Feature]: "
+labels:
+  - enhancement
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## CoreTuff Feature Request
+
+        Thank you for taking the time to contribute to CoreTuff!
+
+        CoreTuff is an open-source project, and community
+        contributions and ideas help shape its development.
+
+        Before submitting:
+        - Search existing issues for similar suggestions.
+        - Make sure your idea is relevant to CoreTuff.
+        - Explain the problem your suggestion aims to solve.
+        - Provide examples or references where possible.
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Suggestion Type
+      description: What kind of suggestion are you submitting?
+      options:
+        - New Feature
+        - Feature Improvement
+        - Performance Optimization
+        - API Enhancement
+        - New Addon
+        - Addon Improvement
+        - UI/UX Improvement
+        - Configuration Enhancement
+        - Integration
+        - Documentation
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      description: Which part of CoreTuff does this suggestion relate to?
+      options:
+        - Core
+        - Addon
+        - API
+        - Dashboard
+        - Web Editor
+        - Integration
+        - Configuration
+        - Database
+        - Documentation
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: addon
+    attributes:
+      label: Addon Name
+      description: If this suggestion concerns an existing addon, provide its name.
+      placeholder: ExampleAddon
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: What problem or limitation are you experiencing?
+      placeholder: |
+        Describe the problem this suggestion would solve.
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Proposed Solution
+      description: Describe the feature or improvement you would like to see.
+      placeholder: |
+        Explain your idea in detail.
+    validations:
+      required: true
+
+  - type: textarea
+    id: usecase
+    attributes:
+      label: Use Cases
+      description: How would this feature be used? Who would benefit from it?
+      placeholder: |
+        Describe practical use cases and potential benefits.
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Have you considered any alternative solutions?
+      placeholder: |
+        Describe existing alternatives or workarounds.
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples / References
+      description: Include reference projects, screenshots, mockups, documentation or links.
+      placeholder: |
+        Add relevant references or examples here.
+
+  - type: dropdown
+    id: contribution
+    attributes:
+      label: Contribution
+      description: Would you be interested in helping implement this suggestion?
+      options:
+        - Yes, I can implement it
+        - Yes, I can help with testing
+        - I can help with design or documentation
+        - No, I am only suggesting the idea
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Include any other information that might help evaluate this suggestion.
+      placeholder: |
+        Anything else we should know?

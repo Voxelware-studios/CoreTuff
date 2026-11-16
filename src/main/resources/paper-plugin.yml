@@ -5,7 +5,7 @@ api-version: '26.1.2'
 authors: [Jeyakasinathan(Frontman)]
 website: https://voxelware.org/
 
-loader: org.voxelware.coretuff.dependencyresolver
+loader: org.voxelware.coretuff.DependencyResolver
 
 folia-supported: true
 

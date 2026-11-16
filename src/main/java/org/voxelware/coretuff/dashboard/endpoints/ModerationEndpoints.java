@@ -3,11 +3,11 @@ package org.voxelware.coretuff.dashboard.endpoints;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.sun.net.httpserver.HttpExchange;
-import org.voxelware.coretuff.Features.Moderation.PunishmentEngine.ModerationSummary;
-import org.voxelware.coretuff.Features.Moderation.PunishmentEngine.ModeratorStat;
-import org.voxelware.coretuff.Features.Moderation.PunishmentEngine.PagedResult;
-import org.voxelware.coretuff.Features.Moderation.PunishmentEngine.PunishmentRecord;
-import org.voxelware.coretuff.Features.Moderation.Service.ModerationService;
+import org.voxelware.coretuff.features.moderation.punishmentengine.ModerationSummary;
+import org.voxelware.coretuff.features.moderation.punishmentengine.ModeratorStat;
+import org.voxelware.coretuff.features.moderation.punishmentengine.PagedResult;
+import org.voxelware.coretuff.features.moderation.punishmentengine.PunishmentRecord;
+import org.voxelware.coretuff.features.moderation.service.ModerationService;
 import org.voxelware.coretuff.dashboard.DashboardModule;
 import org.voxelware.coretuff.dashboard.server.RestApiHandler;
 

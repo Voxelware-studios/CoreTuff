@@ -1,0 +1,20 @@
+
+# Ignore everything by default
+*
+
+# Allow these directories
+!gradle/
+!src/
+!.github/
+
+# Allow these files
+!build.gradle.kts
+!gradle.properties
+!gradlew
+!gradlew.bat
+!settings.gradle.kts
+
+# Allow all contents inside permitted directories
+!gradle/**
+!src/**
+!.github/**

@@ -51,7 +51,7 @@ public final class EditorConfig {
         if (devMode) {
             return "http://localhost:25570";
         }
-        return db.getString("editor.backend-url", "https://ct-backend-b8cy.onrender.com").replaceAll("/$", "");
+        return db.getString("editor.backend-url", "https://ct.api.voxelware.org").replaceAll("/$", "");
     }
 
     public String getFrontendUrl() {

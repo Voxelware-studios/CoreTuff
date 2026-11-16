@@ -91,8 +91,8 @@ public final class CoreTuff extends JavaPlugin {
 	private static final String BLUE = "\u001B[38;2;0;0;255m";
 	private static final String RESET = "\u001B[0m";
 	private static final String LOGOGRAY = "\u001B[38;2;127;132;140m";
-	private static final String CHANNEL = "Nightly";
-	private static final boolean DEV_MODE = false;
+	private static final String CHANNEL = "future-update";
+	private static final boolean DEV_MODE = true;
 	public String getChannel() { return CHANNEL; }
 	public boolean isDevMode() { return DEV_MODE; }
 	private CoreConfigLoader coreConfigLoader;
